@@ -16,7 +16,14 @@
 }
 
 .App-title {
-  font-size: 1.5em;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "League-Gothic", Courier;
+  font-size: 100px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 5px 5px 0 #ffd217, 10px 10px 0 #5ac7ff, 15px 15px 0 #ffd217,
+    20px 20px 0 #5ac7ff;
 }
 
 .App-intro {
