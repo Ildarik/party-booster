@@ -52,7 +52,7 @@
 .button {
   margin: 10px auto;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   width: 254px;
 }
