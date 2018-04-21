@@ -30,3 +30,32 @@
     transform: rotate(360deg);
   }
 }
+
+.button {
+  display: flex;
+  align-items: center;
+}
+
+span.btn-icon {
+  margin-right: 10px;
+  background-size: contain;
+  float: left;
+  width: 40px;
+  height: 40px;
+}
+
+.get-random {
+  background: url("images/man-in-a-party-dancing-with-people.svg") no-repeat;
+}
+
+.create {
+  background: url("images/flags.svg") no-repeat;
+}
+
+.organization {
+  background: url("images/flyer.svg") no-repeat;
+}
+
+.buddy {
+  background: url("images/wine-glasses.svg") no-repeat;
+}
