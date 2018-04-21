@@ -14,7 +14,7 @@ class App extends Component {
         <main>
           <Grid>
             <Row>
-              <Col xs={12} md={2} mdOffset={3}>
+              <Col xs={12} md={2} mdOffset={3} className="button-column">
                 <Button className="button" bsStyle="primary" bsSize="large">
                   <span className="get-random btn-icon" />
                   <span>Get Random PARTY!</span>
