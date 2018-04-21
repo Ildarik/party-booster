@@ -27,6 +27,10 @@
 }
 
 @media only screen and (max-width: 470px) {
+  .App-header {
+    padding: 10px;
+  }
+
   .App-title {
     font-size: 55px;
   }
