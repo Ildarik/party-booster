@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Grid, Row, Col, Button } from "react-bootstrap";
-import logo from "./images/SMirC-party.svg";
 import "./App.css";
 
 class App extends Component {
