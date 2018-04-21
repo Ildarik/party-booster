@@ -29,16 +29,18 @@ class App extends Component {
               </Col>
             </Row>
             <Row>
-              <Col xs={12} md={2} mdOffset={3}>
-                <Button className="button" bsStyle="warning" bsSize="large">
-                  <span className="organization btn-icon" />
-                  <span>All for organization</span>
-                </Button>
-              </Col>
               <Col xs={12} md={2} mdOffset={1}>
                 <Button className="button" bsStyle="info" bsSize="large">
                   <span className="buddy btn-icon" />
                   <span>Drunk buddy</span>
+                </Button>
+              </Col>
+              <Col xs={12} md={2} mdOffset={3}>
+                <Button className="button" bsStyle="warning" bsSize="large">
+                  <span className="organization btn-icon" />
+                  <span>
+                    Find games and audio <br /> (COMING SOON!)
+                  </span>
                 </Button>
               </Col>
             </Row>
