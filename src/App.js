@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Grid, Row, Col, Button } from "react-bootstrap";
 import "./App.css";
+import { Link } from "react-router-dom";
 
 class App extends Component {
   render() {
@@ -19,10 +20,12 @@ class App extends Component {
                 </Button>
               </Col>
               <Col xs={12} md={2} mdOffset={1}>
-                <Button className="button" bsStyle="success" bsSize="large">
-                  <span className="create btn-icon" />
-                  <span>Create your PARTY!</span>
-                </Button>
+                <Link to="/create">
+                  <Button className="button" bsStyle="success" bsSize="large">
+                    <span className="create btn-icon" />
+                    <span>Create your PARTY!</span>
+                  </Button>
+                </Link>
               </Col>
             </Row>
             <Row>
