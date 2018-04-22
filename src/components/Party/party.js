@@ -14,7 +14,10 @@ class Party extends React.Component {
     const data = new FormData(event.target);
     fetch("http://10.0.0.102:8000/api/get_party_info", {
       method: "POST",
-      body: data
+      body: JSON.stringify(data),
+      headers: {
+        "Content-Type": "application/json; charset=utf8"
+      }
     });
   }
 
