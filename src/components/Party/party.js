@@ -12,7 +12,6 @@ class Party extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
     const data = new FormData(event.target);
-    console.log(data);
     fetch("http://10.0.0.102:8000/api/get_party_info", {
       method: "POST",
       body: data
@@ -29,14 +28,17 @@ class Party extends React.Component {
         </header>
         <form onSubmit={this.handleSubmit}>
           <label>How many people?</label>
+          <br />
           <select name="people">
             <option value="less5">Less than 5</option>
             <option value="sixten">6-10</option>
             <option value="elevenfifteen">11-15</option>
             <option value="more16">More than 16</option>
           </select>
-
+          <br />
+          <br />
           <label>What type of party?</label>
+          <br />
           <select name="type">
             <option value="meeting">Meeting with friends</option>
             <option value="birthday">Birthday</option>
@@ -44,16 +46,20 @@ class Party extends React.Component {
             <option value="graduation">Graduation</option>
             <option value="corporate">Corporate meeting</option>
           </select>
-
+          <br />
+          <br />
           <label>Where do plan to go?</label>
+          <br />
           <select name="place">
             <option value="home">At home</option>
             <option value="cafe">Cafe\Bar</option>
             <option value="club">Club</option>
             <option value="other">Other</option>
           </select>
-
+          <br />
+          <br />
           <label>What do you plan to do?</label>
+          <br />
           <select name="todo">
             <option value="drinking">Drinking</option>
             <option value="smoking">Smoking</option>
@@ -61,14 +67,18 @@ class Party extends React.Component {
             <option value="music">Listening to music</option>
             <option value="dancing">Dancing</option>
           </select>
-
+          <br />
+          <br />
           <label>Describe your ideal party</label>
+          <br />
           <input
             id="textInput"
-            name="name"
+            name="ideal"
             type="text"
             placeholder="Enter text"
           />
+          <br />
+          <br />
           <Button type="submit">Submit</Button>
         </form>
       </div>
